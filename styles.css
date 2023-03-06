@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+.nav-bar {
+  display: flex;
+  background-color: #404eed;
+  height: 81px;
+  width: 80%;
+  justify-self: center;
+  /* background-color: red; */
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main {
+  display: flex;
+  background-color: #404eed;
+  height: 630px;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo {
+  color: white;
+}
+
+.nav-list {
+  display: flex;
+  width: 50%;
+}
+
+.nav-list ul {
+  display: flex;
+  justify-content: space-around;
+
+  width: 100%;
+}
+
+.nav-list li {
+  display: inline;
+  list-style-type: none;
+  color: white;
+}
+
+.login-btn {
+  height: 38px;
+  width: 65px;
+  background-color: white;
+  border-radius: 20px;
+  border-style: none;
+  margin-right: 30px;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  width: 50%;
+  height: 50%;
+  text-align: center;
+}
+
+.hero h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.hero p {
+  color: white;
+  font-size: 20px;
+}
