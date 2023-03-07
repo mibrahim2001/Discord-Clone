@@ -1,6 +1,12 @@
 @font-face {
   font-family: GGsans;
-  src: url(./assets/ggsans-Normal.ttf);
+  src: url(./assets/ggsans-Medium.ttf);
+}
+
+@font-face {
+  font-family: GGsans;
+  src: url(./assets/ggsans-Semibold.ttf);
+  font-weight: 500;
 }
 
 @font-face {
@@ -59,7 +65,7 @@ a {
   display: inline;
   list-style-type: none;
   color: white;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .nav-list li:hover {
@@ -73,14 +79,19 @@ a {
   border-radius: 20px;
   border-style: none;
   margin-right: 30px;
-  font-weight: 400;
+  font-weight: 500;
+  font-family: GGsans;
+}
+
+.login-btn:hover {
+  cursor: pointer;
 }
 
 main {
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
   z-index: 999;
@@ -88,14 +99,15 @@ main {
 
 .hero {
   width: 50%;
-  height: 50%;
+  min-height: 50%;
   text-align: center;
   overflow: hidden;
+  margin-top: 70px;
 }
 
 .hero h1 {
   color: white;
-  font-size: 50px;
+  font-size: 48px;
   font-weight: 50;
   letter-spacing: 3px;
   text-align: center;
@@ -126,11 +138,25 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: GGsans;
+  /* font-weight: bold; */
+  cursor: pointer;
+}
+
+.custom-button:hover {
+  box-shadow: 0 8px 15px rgb(0 0 0 / 20%);
 }
 .download-icon {
   margin-left: 5px;
   margin-right: 10px;
 }
+.btn-light {
+  background-color: white;
+}
+.btn-light:hover {
+  color: #5865f2;
+}
+
 .btn-dark {
   background-color: #23272a;
   color: white;
@@ -165,4 +191,70 @@ main {
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+@media screen and (max-width: 1480px) {
+  .img-hero-left {
+    width: 400px;
+  }
+  .img-hero-right {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  main {
+    align-items: flex-start;
+    margin-left: 50px;
+  }
+  .hero {
+    margin-top: 30px;
+  }
+  .buttons-container {
+    flex-direction: column;
+    margin-top: 20px;
+    height: 150px;
+    justify-content: space-around;
+  }
+  .img-hero-left {
+    display: none;
+  }
+  .img-hero-right {
+    width: 500px;
+  }
+
+  .hero h1,
+  p {
+    text-align: left;
+  }
+
+  .nav-bar ul {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .hero {
+    width: 90%;
+    min-height: 25%;
+  }
+  .hero h1 {
+    font-size: 5vw;
+  }
+  .hero p {
+    font-size: 3vw;
+    font-weight: 100;
+  }
+  .main {
+    height: 800px;
+  }
+  .hero-img-container {
+    height: 800px;
+  }
+  .img-hero-right {
+    right: 20px;
+  }
+  .nav-bar ul {
+    display: none;
+  }
 }
