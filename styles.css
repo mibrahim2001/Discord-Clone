@@ -1,11 +1,22 @@
+@font-face {
+  font-family: GGsans;
+  src: url(./assets/ggsans-Normal.ttf);
+}
+
+@font-face {
+  font-family: ClimateCrisis;
+  src: url(./assets/ClimateCrisis.ttf);
+}
 body {
   margin: 0;
+  font-family: GGsans;
 }
 
 a {
   color: inherit;
   text-decoration: inherit;
 }
+
 .nav-bar {
   display: flex;
   background-color: #404eed;
@@ -15,6 +26,7 @@ a {
   /* background-color: red; */
   align-items: center;
   justify-content: space-between;
+  z-index: 10;
 }
 
 .main {
@@ -24,6 +36,7 @@ a {
   width: 100%;
   align-items: center;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .logo {
@@ -32,13 +45,13 @@ a {
 
 .nav-list {
   display: flex;
-  width: 50%;
+  width: 55%;
+  margin-left: -50px;
 }
 
 .nav-list ul {
   display: flex;
-  justify-content: space-around;
-
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -46,6 +59,11 @@ a {
   display: inline;
   list-style-type: none;
   color: white;
+  font-weight: bold;
+}
+
+.nav-list li:hover {
+  text-decoration: underline;
 }
 
 .login-btn {
@@ -55,6 +73,7 @@ a {
   border-radius: 20px;
   border-style: none;
   margin-right: 30px;
+  font-weight: 400;
 }
 
 main {
@@ -63,22 +82,87 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  z-index: 999;
 }
 
 .hero {
   width: 50%;
   height: 50%;
   text-align: center;
+  overflow: hidden;
 }
 
 .hero h1 {
   color: white;
-  font-size: 40px;
-  font-weight: bold;
+  font-size: 50px;
+  font-weight: 50;
+  letter-spacing: 3px;
   text-align: center;
+  font-family: ClimateCrisis;
 }
 
 .hero p {
   color: white;
   font-size: 20px;
+}
+
+.buttons-container {
+  /* background-color: red; */
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.custom-button {
+  height: 56px;
+  width: 300px;
+  background-color: white;
+  border-radius: 28px;
+  /* font-weight: 600; */
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.download-icon {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+.btn-dark {
+  background-color: #23272a;
+  color: white;
+}
+
+.hero-img-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 630px;
+  z-index: 0;
+}
+
+.img-hero-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 500px;
+}
+
+.img-hero-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  width: 500px;
+}
+
+.img-hero-center {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
