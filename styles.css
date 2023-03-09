@@ -1,12 +1,31 @@
 @font-face {
   font-family: GGsans;
+  src: url(./assets/ggsans-Normal.ttf);
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: GGsans;
   src: url(./assets/ggsans-Medium.ttf);
+  font-weight: 200;
 }
 
 @font-face {
   font-family: GGsans;
   src: url(./assets/ggsans-Semibold.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: GGsans;
+  src: url(./assets/ggsans-Bold.ttf);
   font-weight: 500;
+}
+
+@font-face {
+  font-family: GGsans;
+  src: url(./assets/ggsans-ExtraBold.ttf);
+  font-weight: 600;
 }
 
 @font-face {
@@ -65,7 +84,7 @@ a {
   display: inline;
   list-style-type: none;
   color: white;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .nav-list li:hover {
@@ -79,7 +98,7 @@ a {
   border-radius: 20px;
   border-style: none;
   margin-right: 30px;
-  font-weight: 500;
+  font-weight: 400;
   font-family: GGsans;
 }
 
@@ -117,6 +136,8 @@ main {
 .hero p {
   color: white;
   font-size: 20px;
+  font-weight: 100;
+  margin-top: 50px;
 }
 
 .buttons-container {
@@ -242,7 +263,7 @@ main {
     font-size: 5vw;
   }
   .hero p {
-    font-size: 3vw;
+    font-size: 16px;
     font-weight: 100;
   }
   .main {
@@ -256,5 +277,64 @@ main {
   }
   .nav-bar ul {
     display: none;
+  }
+}
+
+#first-section {
+  margin-top: 120px;
+  align-items: center;
+}
+
+.section-heading {
+  margin-top: 48px;
+  font-weight: 600;
+  font-size: 50px;
+}
+
+.section-description {
+  font-size: 20px;
+}
+
+p {
+  font-weight: 100;
+}
+
+.row {
+  width: 100%;
+  justify-content: center;
+}
+
+.section-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  margin-left: 2em;
+}
+
+@media screen and (max-width: 700px) {
+  .section-right {
+    margin-left: 3em;
+  }
+  .section-heading {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  .container {
+    margin: 0;
+  }
+  .section-img-container {
+    margin-left: 25px;
+  }
+
+  .section-description {
+    font-size: 16px;
   }
 }
