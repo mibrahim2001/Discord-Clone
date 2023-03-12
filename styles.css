@@ -41,6 +41,9 @@ a {
   color: inherit;
   text-decoration: inherit;
 }
+a:hover {
+  color: white;
+}
 
 .nav-bar {
   display: flex;
@@ -260,11 +263,12 @@ main {
     min-height: 25%;
   }
   .hero h1 {
-    font-size: 5vw;
+    font-size: 2.2em;
   }
   .hero p {
     font-size: 16px;
     font-weight: 100;
+    margin-top: 20px;
   }
   .main {
     height: 800px;
@@ -325,7 +329,7 @@ p {
   min-width: 100%;
   display: flex;
   justify-content: center;
-  height: 680px;
+  min-height: 680px;
 }
 
 .even-section {
@@ -338,6 +342,64 @@ p {
   margin-top: 120px;
 }
 
+.section4-heading {
+  font-size: 32px;
+  font-family: ClimateCrisis;
+  text-align: center;
+  margin-top: 50px;
+  letter-spacing: 3px;
+  word-spacing: 5px;
+}
+
+.section4-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.section4-container .row {
+  display: flex;
+  justify-content: center;
+}
+
+.section4-img {
+  width: 60%;
+}
+
+.section4-description {
+  width: 70%;
+  text-align: center;
+  margin-top: 24px;
+  line-height: 1.625;
+}
+
+.call-to-action {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.call-to-action h2 {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.call-to-action img {
+  width: 600px;
+  position: absolute;
+  overflow: hidden;
+}
+.blue {
+  background-color: #5865f2;
+  color: white;
+  margin-top: 20px;
+}
+.blue:hover {
+  color: white;
+  background-color: #848ef5;
+}
 @media screen and (max-width: 700px) {
   .section-right {
     margin-left: 3em;
@@ -347,9 +409,7 @@ p {
     margin-top: 0;
     width: 100%;
   }
-  .container {
-    margin: 0;
-  }
+
   .section-img-container {
     margin-left: 25px;
   }
@@ -358,8 +418,33 @@ p {
     font-size: 16px;
   }
   .even-container {
-    height: auto;
+    min-height: auto;
     padding-top: 20px;
     padding-bottom: 20px;
+    justify-content: flex-start;
+  }
+  .even-section {
+    width: 100%;
+  }
+
+  .section4-container {
+    padding-left: 20px;
+  }
+  .section4-heading {
+    font-size: 1em;
+    text-align: left;
+  }
+  .section4-img {
+    width: 100%;
+  }
+  .section4-description {
+    width: 100%;
+    text-align: left;
+    margin-top: 15px;
+    line-height: 1.625;
+  }
+
+  body {
+    overflow-x: hidden;
   }
 }
