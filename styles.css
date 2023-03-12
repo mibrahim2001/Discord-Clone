@@ -319,6 +319,25 @@ p {
   margin-left: 2em;
 }
 
+.even-container {
+  margin-top: 120px;
+  background-color: #f6f6f6;
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 680px;
+}
+
+.even-section {
+  flex-direction: row-reverse;
+
+  width: 1320px;
+}
+
+.odd-container {
+  margin-top: 120px;
+}
+
 @media screen and (max-width: 700px) {
   .section-right {
     margin-left: 3em;
@@ -326,6 +345,7 @@ p {
   .section-heading {
     font-size: 20px;
     margin-top: 0;
+    width: 100%;
   }
   .container {
     margin: 0;
@@ -336,5 +356,10 @@ p {
 
   .section-description {
     font-size: 16px;
+  }
+  .even-container {
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
