@@ -44,7 +44,9 @@ a {
 a:hover {
   color: white;
 }
-
+#download:hover .dropdown-menu {
+  display: block;
+}
 .nav-bar {
   display: flex;
   background-color: #404eed;
@@ -107,6 +109,10 @@ a:hover {
 
 .login-btn:hover {
   cursor: pointer;
+}
+
+.login-btn a:hover {
+  color: #5865f2;
 }
 
 main {
